@@ -1,0 +1,175 @@
+v4.1
+#5218 : 21/01/2022 : PMN : [BreakingChange] Build AL : Publish ChangeNote to ArtifactFolder (ArtifactType subfolder)
+#5218 : 20/01/2022 : PMN : Build AL : Fix build/hotfix number and contextSensitiveHelpUrl not updated in app.json if Convert main App (renumbering objects, renaming prefixes, new App Id)
+#5218 : 20/01/2022 : PMN : Build AL : Fix ProjectSettings.xml update if don't exist nodes DevLocalInstallScripts and BuildLocalInstallScripts
+#5218 : 17/01/2022 : PMN : Deploy AL : Add new depencencies management (subfolder of ArtifactType)
+#4680 : 17/01/2022 : PMN : [Hotfix] Dev AL : Rollback set Docker container default isolation to process (bugs fixed in BCContainerHelper 2.0.17)
+#4679 : 25/11/2021 : PMN : Build AL : Modify pattern for RapidStart Packages object ids renumbering (renumber now all contents)
+#4581 : 22/11/2021 : PMN : Build AL : Add update RapidStart Packages object name prefix
+#4583 : 22/11/2021 : PMN : Build AL : Add renumber also CaptionClass with 3 values separated with , (2nd number = table no to renumber, 3rd number = field no to renumber)
+#4474 : 03/11/2021 : PMN : [BreakingChange] Build/Deploy AL : Add dependencies management deployment with multiple artifact types (specially for dependencies between CallioPacks)
+                           - Params $MainAppId and $MainAppPrefix for NAVALRunBuild.ps1 are mandatory for dependencies management deployment
+#3506 : 25/10/2021 : PMN : Build/ Deploy AL/CAL : Fix improve error return for DevOps (Errors not catched as Exception)
+#3480 : 23/10/2021 : PMN : Build/Deploy AL : Add dependencies management with multiple artifact types (specially for dependencies between CallioPacks)
+
+v4.0
+#3506 : 20/10/2021 : PMN : Build/ Deploy AL/CAL : Improve error return for DevOps
+#4223 : 18/10/2021 : PMN : Deploy AL (Git) : Add --depth 1 to Invoke-GitCloneRemoteRepos and add text to email to merge scripts to other branches
+#4224 : 18/10/2021 : PMN : Dev AL : Set Docker container Dns to 8.8.8.8
+#4254 : 18/10/2021 : PMN : Dev AL : Set Docker container default isolation to hyperv
+
+v3.9
+#2433 : 22/07/2021 : PMN : Fix compilation error not catched as build error
+#3313 : 22/07/2021 : PMN : Build CAL : Fix MenuSuite compilation if only one line in the log file
+#2823 : 30/06/2020 : PMN : Build Help : Manage toc.yml files in subfolders
+#2821 : 29/06/2021 : PMN : Build AL : Fix Git Change Note FromDate format (MM/dd/yyyy) 
+#2408 : 23/06/2021 : PMN : Build AL : Fix multi-range management from App renumbering in xliff files
+#2408 : 16/06/2021 : PMN : Build AL : Add multi-range management from App renumbering (comma separated list for param NewMainAppIdRangeFrom )
+#2495 : 26/05/2021 : PMN : Deploy AL/CAL (Mail) : Fix attachments with the same image
+#2138 : 04/05/2021 : PMN : Deploy AL (Git) : Fix ProjectSettings.xml update if exists several Apps with a similar name
+#2315 : 03/05/2021 : PMN : Deploy AL (OnPrem) : Add a license file to use param (especially for to deploy a BaseApp with a Dev license)
+#1360 : 15/03/2021 : PMN : Dev AL : Fix posh-git new version installation
+#1312 : 10/03/2021 : PMN : Deploy AL (OnPrem) : Fix error reinstall dependencies uninstalled Apps with other version already installed (caused by ForceSync)
+#1250 : 05/03/2021 : PMN : Deploy AL (OnPrem) : Fix error uninstall App with ForceSync
+#430 : 02/03/2021 : PMN : Dev AL : Migration to BcContainerHelper
+#421 : 23/02/2021 : PMN : Build AL : Add RapidStart Packages renumbering in Convert-NavApp, Artifact publishing and deploy to Git repos
+#1169 : 22/02/2021 : PMN : Build CAL : Fix license expiration warning
+#622 : 19/02/2021 : PMN : Deploy AL (OnPrem) : Fix error when publish/install a previous version or a same version with ForceSync
+#1152 : 19/02/2021 : PMN : Build CAL : Fix SQL Server name and NAV Server name wrong display, MaxTry default value changed from 3 to 1
+#169 : 17/02/2021 : PMN : Build CAL : Fix Docker images removed (Add BC artifacts management (BC Docker images replacement))
+#422 : 12/02/2021 : PMN : Build AL : Add publish Change Note
+#432 : 04/01/2021 : PMN : Deploy AL (Azure VM) : Add Azure Service Principal authentication with secret
+#429 : 30/12/2020 : PMN : Build AL : Fix Sign-NavContainerApp (https://github.com/microsoft/navcontainerhelper/issues/1579)
+#424 : 23/12/2020 : PMN : Build Help : Adaptation for all solutions (not only CallioPacks Business Central)
+#417 : 22/12/2020 : PMN : Build/Deploy AL : Fix deployment failed if no dependent Apps (add empty apps.json in Dependencies folder)
+#359 : 07/12/2020 : PMN : Deploy AL : Fix deploy PerTenant to Git repos with ArtifactType PerTenant
+#317 : 04/12/2020 : PMN : Deploy AL : Simplify OnPrem App deployment with Depencencies
+
+v3.8
+#315 : 27/11/2020 : PMN : Deploy AL : Add Azure VM App deployment with Depencencies and auto-starting/auto-stopping VM if not started
+#307 : 27/11/2020 : PMN : Build AL : Add apps.json to Dependencies artifact folder to simplify dependent Apps deployment
+
+v3.7
+#259 : 15/11/2020 : PMN : Build/Dev AL : Adaptations for BC17 BaseApp (MS Application App cannot be unpublished and MS Base Application App cannot be renammed)
+#258 : 15/11/2020 : PMN : Build/Dev AL : Fix (workarround) NavContainetHelper issue in New-NavContainer with -includeTestToolkit for containers BC >= 17.2
+
+v3.6
+#86 : 12/11/2020 : PMN : Build AL/CAL : Add clean artifacts cache and remove containers (NAVCleanBuild script)
+#255 : 12/11/2020 : PMN : Build/Dev AL : BcContainerHelper migration preparation
+#256 : 12/11/2020 : PMN : Dev AL : Fix encoding issue with PowerShell (remove accents in folder and file names)
+
+v3.5
+#253 : 11/11/2020 : PMN : Build/Dev AL : Fix (workarround) NavContainetHelper issue in New-NavContainer with -includeTestToolkit for BC18 containers
+#249 : 06/11/2020 : PMN : Dev AL : Add LS HardwareStation shortcuts (for projects based on LS)
+
+v3.4
+#243 : 02/11/2020 : PMN : Build AL : Add dependent Apps (based on BuildLocalInstallScripts node) to Dependencies artifact folder (for future deployment)
+
+v3.3
+#227 : 29/10/2020 : PMN : Build AL : Fix if exist dependent Apps with Add-Ins (phase Baseline Add-Ins before Execute XmlBuildScripts)
+#219 : 22/10/2020 : PMN : Deploy CAL : Fix clean folder c:\install\NAV\Fob (all files deleted and not only files < Date - $DaysToKeepFiles)
+#218 : 19/10/2020 : PMN : Deploy AL : Add param $SyncMode on deploy to Git/Tfvc repos 
+#217 : 19/10/2020 : PMN : Deploy AL : Add email template for other Edition release
+#216 : 19/10/2020 : PMN : Deploy AL : Add params AppPublisher and AppName (for artifact folders with multiple Apps)
+#213 : 17/10/2020 : PMN : Deploy AL : Add deploy Extension/App OnPrem (included BaseApp)
+
+v3.2
+#212 : 14/10/2020 : PMN : Dev AL : Fix install in container new version of App, BaseApp and reinstall uninstalled Apps
+
+v3.1
+#196 : 13/10/2020 : PMN : Deploy (App Git folder) : Fix baseline\apps folder could not exist
+#193 : 06/10/2020 : PMN : Build AL : Add HotfixNumber update (specially for CMC BaseApp)
+#172 : 22/09/2020 : PMN : Build/Dev AL : Add skipverification to Container App install 
+#170 : 16/09/2020 : PMN : Build/Dev AL : AppSourceCop code analyzer is disabled for Test Apps
+#155 : 10/09/2020 : PMN : Build/Deploy CAL : Add Tfvc repos updates on DevOps release
+
+v3.0
+#137 : 26/08/2020 : PMN : Dev CAL : Fix Create-NAVDevShortcuts for CheckCodingRules and fix old shortcuts not removed
+#129 : 20/08/2020 : PMN : Build AL : Fix files .rdl not renammed (build PerTenant with App renamming)
+#128 : 19/08/2020 : PMN : Build/Deploy : Add Param $BuildHelpDestinationFolder and rename param $DestinationFolder to $MainBuildDestinationFolder
+#127 : 19/08/2020 : PMN : Build Help : Fix DocFx bug if output folder is not empty before running build
+#47 : 18/08/2020 : PMN : Build/Deploy : Add param $ArtifactFolder
+
+v2.0
+#14633 : 16/08/2020 : PMN : Build CAL : Fix NavContainerHelper bug (Import-ObjectsToNavContainer)
+#14516 : 04/08/2020 : PMN : Deploy : Add update scripts and templates to project Git repos and to pipeline server agents
+#14496 : 03/08/2020 : PMN : Dev AL : Add NAVUpdateDevEnv-DockerContainer.bat script and update license in container
+#14504 : 31/07/2020 : PMN : Dev AL : Fix settings.json for BaseApp (add "C:/Windows/Microsoft.NET/assembly" in al.assemblyProbingPath and add "CRS.OnSaveAlFileAction": "DoNothing")
+#14111 : 29/07/2020 : PMN : Build/Deploy : Add notification and Git repos update enhancements
+                            - Add Git repos updates on DevOps release
+#14665 : 24/07/2020 : PMN : Disable AppSourceCop if OnPrem target
+#14452 : 24/07/2020 : PMN : Build AL : Reorganize build steps : Convert-NavApp after container creation
+#14419 : 24/07/2020 : PMN : Build/Dev : Replace Gb by GB
+#14111 : 21/07/2020 : PMN : Build/Deploy : Add notification and Git repos update enhancements
+                            - Add email notification based on templates
+#13999 : 20/07/2020 : PMN : Build AL : Generate warning (and not error) if translate="no" and text not found when apply renaming in xliff files
+#14153 : 19/07/2020 : PMN : Build AL : Add param $HelpUrl (for update contextSensitiveHelpUrl in app.json )
+#14115 : 18/07/2020 : PMN : Build AL : Add copy app.json of compiled apps to build artifact folder
+#14338 : 15/07/2020 : PMN : Build AL : Rename param NAVContainerMemoryLimit to ContainerMemoryLimitGb with default value "13G"
+#14189 : 15/07/2020 : PMN : Build/Dev AL : Add param $DisableTaskScheduler to Create-NavContainer
+#14116 : 07/07/2020 : PMN : Build/Dev AL : Add BC artifacts management (BC Docker images replacement)
+#14118 : 01/07/2020 : PMN : Build AL : Add update references to external Apps in Convert-NavApp (param $AppExternalReferencesToUpdate)
+#12756 : 23/06/2020 : PMN : Build/Dev CAL/AL : Add NAVContainerLicenseType (Premium, Essentials) management (Premium is the default)
+#10978 : 23/06/2020 : PMN : Builds CAL : Remove SQLEXPRESS from container database server name (Fix Windows update Feb 2020 issue)
+#13876 : 17/06/2020 : PMN : Deploy AL : Fix Invoke-WebRequest error caused by Tls protocol
+#13292 : 09/06/2020 : PMN : Build/Dev AL : Fix Install-NavContainerAppDependencies for BaseAppDependencyAppIdsToNotRepublish exceptions (for BaseApp projects)
+#13051 : 21/05/2020 : PMN : Build/Dev AL : Fix BC breaking change in App depencies with the new Microsoft Application App (for BaseApp projects)
+#12633 : 19/05/2020 : PMN : Dev AL : Add Git multibranching management
+                            - Install PowerShell module posh-git (https://github.com/dahlbyk/posh-git)
+							- Display current Git branch in scripts
+							- Renaming project desktop shortcut names
+							- Add Git Powershell Prompt shortcut
+							- Add param NAVContainerGitBranches in ProjectSettings.xml and check in scripts current Git branch is in list
+#12905 : 14/05/2020 : PMN : Dev CAL/AL : Add Always pull image for container creation
+#12753 : 11/05/2020 : PMN : Build AL : Add try/catch on compilation and signing tasks
+#12751 : 07/05/2020 : PMN : Build AL : Add CaptionClass renumbering in Convert-NavApp
+#12752 : 05/05/2020 : PMN : Build/Dev AL : Fix copy file(s) to container if source doesn't exist and add volume for Add-ins if folder doesn't exist
+#12665 : 01/05/2020 : PMN : Build AL : Add function Update-NavAppVersion (for update app.json with DevOps build number)
+#12584 : 28/04/2020 : PMN : Build AL : Fix tests not found in Get-TestsFromNavContainer
+#8690  : 25/04/2020 : PMN : Deploy AL : Add BC Online App publishing/installing (NAVDeployApplicationExtensionOnline.ps1)
+#12385 : 24/04/2020 : PMN : Build AL : Fix run tests (folder not shared with container)
+#11198 : 13/04/2020 : PMN : Build AL : Add XmlBuildScripts management
+#11677 : 31/03/2020 : PMN : Build/Dev AL : Adaptations for BaseApp (especially for CMC BC15)
+                            - Add param NAVContainerMemoryLimitGb in config file  (for container creation memory assigned and checked)
+							- Allow App renaming (name and publisher) also for all Apps
+							- Unpublish and Clean Apps based on Id (before based on Name)
+							- Use Replace-DependenciesInAppFile in MS Apps dependent on BaseApp for BaseApp renaming
+							- Add ForceSync option for Publishing/Installing App (especially for CMC BC15 BaseApp (DataPerCompany property modified))
+							- Add UnpublishApps option for Unpublishing/Uninstalling App (especially for CMC BC15 BaseApp (DataPerCompany property modified))
+							- Add Start-NavAppDataUpgrade automatic management when App install failed
+							- Add param ProjectAppsBaseAppDependencyAppIdsToNotRepublish in config file (for not republish some BaseApp dependent Apps (especialy for AMC Banking not compatible with CMC BC15 BaseApp (DataPerCompany property modified)))
+							- Add param ProjectAppsBaseAppDependenciesArtifactFolder to copy BaseApp dependent Apps modified in artifact folder (in case of BaseApp renaming)
+#11643 : 30/03/2020 : PMN : Build AL : Copy Baseline Add-Ins to container service tier add-ins folder
+#11625 : 30/03/2020 : PMN : Build AL : Add param $Versioning (add BC version (Getted from container) in $ArtifactFolder)
+#11624 : 30/03/2020 : PMN : Build/Dev AL : Add Docker login (for BC next minor and major images on bcinsider.azurecr.io)
+#11134 : 25/03/2020 : PMN : Build/Dev AL : Fix Get-TestsFromNavContainer with try/catch
+#11553 : 24/03/2020 : PMN : Build AL : Add param $NewMainAppNamePrefix (to rename App), $ProcessOnlyMainApp and and $DoNotRunTests
+#11496 : 19/03/2020 : PMN : Build/Dev CAL : Adaptations and fixes on objects compilation :
+                            - Add retry management on objects compilation
+							- Fix build not failed on compilation errors
+							- Add parameter $CompileAllObjects in build
+							- Compile only objets not compiled in build (objects modified included before) 
+							- Doesn't lock objects modified
+#11498 : 19/03/2020 : PMN : Dev/Build CAL : Fix flag modified cleaned in container creation with baseline database 
+#11011 : 16/03/2020 : PMN : Dev CAL : Add Compile objects script and shortcut
+#11011 : 16/03/2020 : PMN : Build CAL : Add ObjectsShortDateFormat and ObjectsDecimalSeparator management for compilation
+#11403 : 16/03/2020 : PMN : Dev CAL/AL : Doesn't create "Tests et intégration (hébergés,distants)" folder if params are empty
+#11397 : 13/03/2020 : PMN : Build CAL : Fix MenuSuite compilation
+#11296 : 11/03/2020 : PMN : Build AL : Fix renumbering and renaming in xliff translation files
+#11198 : 09/03/2020 : PMN : Build CAL : Add XmlBuildScripts management
+#10595 : 09/03/2020 : PMN : Dev CAL : Add SetupNAVObjectsContainer script and $BranchName param in DevLocalInstallScripts
+#10735 : 02/03/2020 : PMN : Dev AL : Fix bug VS Code task Restart-NAVContainer (for projects with subfolder)
+#11025 : 28/02/2020 : PMN : Build AL : Add NAVALConvertApp.ps1 for convert AL App (renumber object Ids, change App Id, change object name prefixes)
+#11025 : 28/02/2020 : PMN : Build AL : Add $CleanApps, $ReuseContainer, $ContainerAppProjectFolder parameters 
+#11025 : 27/02/2020 : PMN : Build AL : Add $ArtifactFolder, $PerTenantTarget
+#11071 : 26/02/2020 : PMN : Dev AL : Add script for install (Publish, Sync,Install) App in container
+#10640 : 01/02/2020 : PMN : Build CAL : Fix limited (arround 100) modified objects in release note if a changeset as more than arround 100 objects 
+#8169  : 01/02/2020 : PMN : Build CAL : Add task to publish fob (zip package) to WebDAV or file server
+#10304 : 01/02/2020 : PMN : Build CAL : NAVRunbuild.ps1 renamed to NAVCALRunBuild.ps1, NAVBuildManagement.ps1 renamed to NAVCALBuildManagement.ps1
+                            Build definitions must be updated (task with NAVRunbuild.ps1 must be renamed to NAVCALRunBuild.ps1) to use the new updates of CAL builds
+                            3 new parameters added to NAVRunbuild.ps1
+                           -WebDAVUser : username for WebDAV server (default WebDAV)
+                           -BuildPublishWebDAVUrl : build publish WebDAV base url (must be set to manage buildsettings.xml file and publish build deployement package on WebDAV server)
+                           -BuildPublishFileServerPath : build publish file server base path or Unc  (must be set to manage buildsettings.xml file and publish build deployement package on file server)
+#10304 : 01/02/2020 : PMN : Build CAL : Refactoring WebDAV management
+#10593 : 31/01/2020 : PMN : Dev CAL/AL : Fix bug container shared folder

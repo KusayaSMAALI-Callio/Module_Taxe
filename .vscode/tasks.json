@@ -1,0 +1,181 @@
+{
+    "version":  "2.0.0",
+    "tasks":  [
+                  {
+                      "label":  "Calliope AL Restart-NavContainer (Ctrl+Alt+R)",
+                      "type":  "shell",
+                      "command":  "PowerShell",
+                      "problemMatcher":  "$go",
+                      "group":  "build",
+                      "args":  [
+                                   "-ExecutionPolicy",
+                                   "Unrestricted",
+                                   "-NoProfile",
+                                   "-File",
+                                   "\u0027C:\\ProgramData\\NavSourcesHelper\\Containers\\CAGTX190-Dev\\Scripts\\Restart-NavContainer.ps1\u0027"
+                               ],
+                      "presentation":  {
+                                           "echo":  true,
+                                           "reveal":  "always",
+                                           "focus":  true,
+                                           "panel":  "new",
+                                           "showReuseMessage":  true,
+                                           "clear":  false
+                                       }
+                  },
+                  {
+                      "label":  "Calliope AL NAVCreateDevEnv-DockerContainer (Ctrl+Alt+D)",
+                      "type":  "shell",
+                      "command":  "PowerShell",
+                      "problemMatcher":  "$go",
+                      "group":  "build",
+                      "args":  [
+                                   "-ExecutionPolicy",
+                                   "Unrestricted",
+                                   "-NoProfile",
+                                   "-File",
+                                   "\u0027..\\Scripts\\NAVCreateDevEnv-DockerContainer.ps1\u0027"
+                               ],
+                      "presentation":  {
+                                           "echo":  true,
+                                           "reveal":  "always",
+                                           "focus":  true,
+                                           "panel":  "new",
+                                           "showReuseMessage":  true,
+                                           "clear":  false
+                                       }
+                  },
+                  {
+                      "label":  "Calliope AL NAVUpdateDevEnv-DockerContainer (Ctrl+Alt+V)",
+                      "type":  "shell",
+                      "command":  "PowerShell",
+                      "problemMatcher":  "$go",
+                      "group":  "build",
+                      "args":  [
+                                   "-ExecutionPolicy",
+                                   "Unrestricted",
+                                   "-NoProfile",
+                                   "-File",
+                                   "\u0027..\\Scripts\\NAVUpdateDevEnv-DockerContainer.ps1\u0027"
+                               ],
+                      "presentation":  {
+                                           "echo":  true,
+                                           "reveal":  "always",
+                                           "focus":  true,
+                                           "panel":  "new",
+                                           "showReuseMessage":  true,
+                                           "clear":  false
+                                       }
+                  },
+                  {
+                      "label":  "Calliope AL Clean-NavContainerProjectApps (Ctrl+Alt+C)",
+                      "type":  "shell",
+                      "command":  "PowerShell",
+                      "problemMatcher":  "$go",
+                      "group":  "build",
+                      "args":  [
+                                   "-ExecutionPolicy",
+                                   "Unrestricted",
+                                   "-NoProfile",
+                                   "-File",
+                                   "\u0027C:\\ProgramData\\NavSourcesHelper\\Containers\\CAGTX190-Dev\\Scripts\\Clean-NavContainerProjectApps.ps1\u0027"
+                               ],
+                      "presentation":  {
+                                           "echo":  true,
+                                           "reveal":  "always",
+                                           "focus":  true,
+                                           "panel":  "new",
+                                           "showReuseMessage":  true,
+                                           "clear":  false
+                                       }
+                  },
+                  {
+                      "label":  "Calliope AL Compile-NavContainerProjectApps (Ctrl+Alt+B)",
+                      "type":  "shell",
+                      "command":  "PowerShell",
+                      "problemMatcher":  "$go",
+                      "group":  "build",
+                      "args":  [
+                                   "-ExecutionPolicy",
+                                   "Unrestricted",
+                                   "-NoProfile",
+                                   "-File",
+                                   "\u0027C:\\ProgramData\\NavSourcesHelper\\Containers\\CAGTX190-Dev\\Scripts\\Compile-NavContainerProjectApps.ps1\u0027"
+                               ],
+                      "presentation":  {
+                                           "echo":  true,
+                                           "reveal":  "always",
+                                           "focus":  true,
+                                           "panel":  "new",
+                                           "showReuseMessage":  true,
+                                           "clear":  false
+                                       }
+                  },
+                  {
+                      "label":  "Calliope AL Publish-NavContainerProjectApps (Ctrl+Alt+P)",
+                      "type":  "shell",
+                      "command":  "PowerShell",
+                      "problemMatcher":  "$go",
+                      "group":  "build",
+                      "args":  [
+                                   "-ExecutionPolicy",
+                                   "Unrestricted",
+                                   "-NoProfile",
+                                   "-File",
+                                   "\u0027C:\\ProgramData\\NavSourcesHelper\\Containers\\CAGTX190-Dev\\Scripts\\Publish-NavContainerProjectApps.ps1\u0027"
+                               ],
+                      "presentation":  {
+                                           "echo":  true,
+                                           "reveal":  "always",
+                                           "focus":  true,
+                                           "panel":  "new",
+                                           "showReuseMessage":  true,
+                                           "clear":  false
+                                       }
+                  },
+                  {
+                      "label":  "Calliope AL UnPublish-NavContainerProjectApps (Ctrl+Alt+U)",
+                      "type":  "shell",
+                      "command":  "PowerShell",
+                      "problemMatcher":  "$go",
+                      "group":  "build",
+                      "args":  [
+                                   "-ExecutionPolicy",
+                                   "Unrestricted",
+                                   "-NoProfile",
+                                   "-File",
+                                   "\u0027C:\\ProgramData\\NavSourcesHelper\\Containers\\CAGTX190-Dev\\Scripts\\UnPublish-NavContainerProjectApps.ps1\u0027"
+                               ],
+                      "presentation":  {
+                                           "echo":  true,
+                                           "reveal":  "always",
+                                           "focus":  true,
+                                           "panel":  "new",
+                                           "showReuseMessage":  true,
+                                           "clear":  false
+                                       }
+                  },
+                  {
+                      "label":  "Calliope AL RunTests-NavContainerProjectApps (Ctrl+Alt+T)",
+                      "type":  "shell",
+                      "command":  "PowerShell",
+                      "problemMatcher":  "$go",
+                      "group":  "test",
+                      "args":  [
+                                   "-ExecutionPolicy",
+                                   "Unrestricted",
+                                   "-NoProfile",
+                                   "-File",
+                                   "\u0027C:\\ProgramData\\NavSourcesHelper\\Containers\\CAGTX190-Dev\\Scripts\\RunTests-NavContainerProjectApps.ps1\u0027"
+                               ],
+                      "presentation":  {
+                                           "echo":  true,
+                                           "reveal":  "always",
+                                           "focus":  true,
+                                           "panel":  "new",
+                                           "showReuseMessage":  true,
+                                           "clear":  false
+                                       }
+                  }
+              ]
+}

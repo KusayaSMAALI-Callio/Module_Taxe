@@ -1,0 +1,15 @@
+.alcache
+.alpackages
+.altemplates
+.netpackages
+.unpublished
+.output
+.altestrunner
+**/.vscode/*
+!**/.vscode/tasks.json
+!**/.vscode/settings.json
+*.app
+*.orig
+launch.json
+rad.json
+testresults.xml

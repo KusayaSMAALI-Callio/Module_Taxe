@@ -1,0 +1,64 @@
+{
+  "id": "9cf8cbcc-26d9-4f8f-a01f-9a91f8a99268",
+  "name": "Tax Management TestApp",
+  "publisher": "Calliope",
+  "brief": "Tax Management TestApp",
+  "description": "Tax Management TestApp",
+  "version": "19.3.0.0",
+  "privacyStatement": "http://www.groupe-calliope.com",
+  "EULA": "http://www.groupe-calliope.com",
+  "help": "http://www.groupe-calliope.com",
+  "url": "http://www.groupe-calliope.com",
+  "contextSensitiveHelpUrl": "http://www.groupe-calliope.com",
+  "logo": "../Assets/Calliope.png",
+  "dependencies": [
+    {
+      "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+      "publisher": "Microsoft",
+      "name": "Library Assert",
+      "version": "16.0.0.0"
+    },
+    {
+      "id": "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
+      "publisher": "Microsoft",
+      "name": "Any",
+      "version": "16.0.0.0"
+    },
+    {
+      "id": "9856ae4f-d1a7-46ef-89bb-6ef056398228",
+      "publisher": "Microsoft",
+      "name": "System Application Test Library",
+      "version": "16.0.0.0"
+    },
+    {
+      "id": "5d86850b-0d76-4eca-bd7b-951ad998e997",
+      "publisher": "Microsoft",
+      "name": "Tests-TestLibraries",
+      "version": "16.0.0.0"
+    },
+    {
+      "id": "23de40a6-dfe8-4f80-80db-d70f83ce8caf",
+      "publisher": "Microsoft",
+      "name": "Test Runner",
+      "version": "16.0.0.0"
+    },
+    {
+      "name": "Tax Management",
+      "publisher": "Calliope",
+      "version": "19.0.0.0",
+      "id": "c9d7e814-4209-4064-809e-a52aece8716d"
+    }
+  ],
+  "screenshots": [],
+  "application": "19.0.0.0",
+  "platform": "19.0.0.0",
+  "idRanges": [
+    {
+      "from": 50250,
+      "to": 50299
+    }
+  ],
+  "resourceExposurePolicy": {"allowDebugging": true, "allowDownloadingSource": true, "includeSourceInSymbolFile": true},
+  "runtime": "8.0",
+  "suppressWarnings": ["AS0051","AS0015","AS0084","AS0054","AS0052"]
+}

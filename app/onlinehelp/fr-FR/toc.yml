@@ -1,0 +1,11 @@
+- name: Gestion des taxes
+  href: CAGTX-overview.md
+  items:
+    - name: Aperçu
+      href: CAGTX-overview.md
+    - name: Historique des versions
+      href: CAGTX-versions.md
+    - name: Paramétrage
+      href: CAGTX-setup.md
+    - name: Utilisation dans les documents
+      href: CAGTX-tax-in-documents.md

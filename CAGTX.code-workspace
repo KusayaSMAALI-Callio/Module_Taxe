@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"name": "Application",
+			"path": "app"
+		},
+		{
+			"name": "Tests",
+			"path": "test"
+		}
+	],
+	"settings": {
+		"al.enableCodeAnalysis": true,
+		"al.enableCodeActions": true,
+		"al.codeAnalyzers": [
+			"${CodeCop}",
+			"${UICop}",
+			"${AppSourceCop}"
+		],
+		"CRS.ObjectNamePrefix": "CAGTX_",
+		"CRS.RemovePrefixFromFilename": true,
+		"CRS.RemoveSuffixFromFilename": true,
+		"CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+		"CRS.OnSaveAlFileAction": "Reorganize"
+	}
+}

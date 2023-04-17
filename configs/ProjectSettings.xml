@@ -1,0 +1,66 @@
+<Configuration>
+  <Parameter Id="ProjectName" Value="D365BC CALLIOPACKS" />
+  <Parameter Id="ProjectSubName" Value="" />
+  <Parameter Id="ProjectTrigram" Value="CAGTX" />
+  <Parameter Id="ProjectVersion" Value="" />
+  <!--Project CAL (Objects) parameters -->
+  <Parameter Id="ProjectObjectsRangeId" Value="8062606,8062645" />
+  <Parameter Id="ProjectObjectsRangeToIgnore" Value="" />
+  <Parameter Id="ProjectObjectsShortDateFormat" Value="dd/MM/yyyy" />
+  <Parameter Id="ProjectObjectsDecimalSeparator" Value="," />
+  <!--Project AL (Apps) parameters -->
+  <Parameter Id="ProjectAppsBaseAppDependencyAppIdsToNotRepublish" Value="" />
+  <!--ProjectType : Edition, Implementation -->
+  <Parameter Id="ProjectType" Value="Edition" />
+  <!--ProjectTargetLanguage : CAL,CALAL, AL -->
+  <Parameter Id="ProjectTargetLanguage" Value="AL" />
+  <Parameter Id="VSTSUrl" Value="https://3libs.visualstudio.com/D365BC%20CALLIOPACKS" />
+  <Parameter Id="VSTSTenant" Value="3libs.visualstudio.com" />
+  <Parameter Id="VSTSProjectName" Value="D365BC CALLIOPACKS" />
+  <Parameter Id="SharePointUrl" Value="" />
+  <Parameter Id="SharePointObjectMgtUrl" Value="" />
+  <Parameter Id="SharePointEnvironmentMgtUrl" Value="" />
+  <Parameter Id="CodingRulesUrl" Value="https://3lionline.sharepoint.com/teams/projectsv2/ressources/SitePages/Normes%20de%20d%C3%A9veloppement%20NAV%20et%20Business%20Central.aspx" />
+  <Parameter Id="HostedDns" Value="" />
+  <Parameter Id="HostedEnvironmentList" Value="" />
+  <!--NAVContainerName max 7 caractères !-->
+  <Parameter Id="NAVContainerName" Value="CAGTX190" />
+  <Parameter Id="NAVContainerImageName" Value="" />
+  <!--NAVContainerArtifact : <storageAccount>/<type>/<version>/<country>/<select> : storageAccount = bcartifacts,bcinsider ; type = Sandbox,OnPrem ; select = Latest (next major for bcinsider),SecondToLastMajor (next minor for bcinsider) !-->
+  <Parameter Id="NAVContainerArtifact" Value="bcartifacts/Sandbox/19/fr/Latest" />
+  <Parameter Id="NAVContainerArtifactToken" Value="" />
+  <Parameter Id="NAVContainerMemoryLimitGB" Value="8G" />
+  <Parameter Id="NAVContainerGitBranches" Value="bc19/dev,bc19/release" />
+  <!--NAVContainerLicenseType : Valeurs possibles :  Premium,Essentials (par défaut, si vide = Premium) !-->
+  <Parameter Id="NAVContainerLicenseType" Value="Essentials" />
+  <Parameter Id="NAVDownloadUrl" Value="" />
+  <Parameter Id="NAVDVDName" Value="" />
+  <Parameter Id="NAVVersion" Value="" />
+  <Parameter Id="NAVLocalization" Value="FR" />
+  <Parameter Id="NAVProductName" Value="Microsoft Dynamics 365 Business Central" />
+  <Parameter Id="NAVVersionFolder" Value="190" />
+  <Parameter Id="BuildBaseline" Value="" />
+  <Parameter Id="BuildNotification" Value="pmoison@groupe-calliope.com" />
+  <Parameter Id="BuildMaster" Value="DEVOPS" />
+  <!--Scripts environnement de Dev !-->
+  <DevLocalInstallScripts>
+    <DevLocalInstallScript Id="Install ReportBuilder" Value="SetupMsi.ps1" Params="$AssetsPath\ReportBuilder3_SQL2016.msi;/i;/quiet /passive" />
+    <DevLocalInstallScript Id="Install Calliope System Application App" Value="SetupNAVAppContainer.ps1" Params="$ContainerName;$BaselinePath\apps\AppSource\Calliope_Calliope System Application_19.1.12493.0.app;Calliope System Application;Add" />
+  </DevLocalInstallScripts>
+  <DevContainerCopyScripts>
+  </DevContainerCopyScripts>
+  <DevContainerInstallScripts>
+  </DevContainerInstallScripts>
+  <!--Scripts environnement de Build !-->
+  <BuildScripts>
+    <BuildLocalInstallScripts>
+      <BuildLocalInstallScript Id="Install Calliope System Application App" Value="SetupNAVAppContainer.ps1" Params="$ContainerName;$BaselinePath\apps\$ArtifactType\Calliope_Calliope System Application_19.1.12493.0.app;Calliope System Application;Add;$CopyToPath;;CAGSA_;CGPSA_" />
+    </BuildLocalInstallScripts>
+    <BuildContainerCopyScripts>
+    </BuildContainerCopyScripts>
+    <BuildContainerInstallScripts>
+    </BuildContainerInstallScripts>
+    <BuildLocalInstallScripts />
+  </BuildScripts>
+  <BuildScripts />
+</Configuration>

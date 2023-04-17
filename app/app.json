@@ -1,0 +1,40 @@
+{
+  "id": "c9d7e814-4209-4064-809e-a52aece8716d",
+  "name": "Tax Management",
+  "publisher": "Calliope",
+  "brief": "Calculate and insert tax lines in Sales and Purchase documents with flexible calculation method and posting setup.",
+  "description": "Calculate and insert tax lines in Sales and Purchase documents with flexible calculation method and posting setup.",
+  "version": "19.3.0.0",
+  "privacyStatement": "https://www.groupe-calliope.com/confidentialite/",
+  "EULA": "http://docs.groupe-calliope.com/EULA.html",
+  "help": "http://docs.groupe-calliope.com/fr-fr/d365calliopacks/business-central/",
+  "url": "https://www.groupe-calliope.com/solutions/par-produits/apps-calliope/calliopack/",
+  "contextSensitiveHelpUrl": "http://docs-dev.groupe-calliope.com/fr-fr/d365calliopacks/business-central/",
+  "logo": "../Assets/Calliope.png",
+  "screenshots": [],
+  "application": "19.0.0.0",
+  "platform": "19.0.0.0",
+  "dependencies": [
+    {
+      "id": "0d6a8e1a-9fa7-49c8-9f7c-591185df5970",
+      "publisher": "Calliope",
+      "name": "Calliope System Application",
+      "version": "19.0.0.0"
+    }
+],
+  "idRanges": [
+    {
+      "from": 8062606,
+      "to": 8062645
+    },
+    {
+      "from": 8062958,
+      "to": 8062987
+    }
+  ],
+  "resourceExposurePolicy": {"allowDebugging": true, "allowDownloadingSource": false, "includeSourceInSymbolFile": false},
+  "runtime": "8.0",
+  "features": [
+    "TranslationFile"
+  ]
+}
